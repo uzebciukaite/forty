@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Source+Sans+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  font-family: mulish;
+  width: 100%;
+}
+header {
+  height: 400px;
+}
+.massalibero {
+  height: 300px;
+}
+
+header,
+.massalibero {
+  width: 100%;
+  background: rgb(7, 7, 61);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1,
+h2 {
+  display: inline-block;
+  padding-bottom: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-bottom: 2px solid white;
+}
+p {
+  font-size: 0.6em;
+  letter-spacing: 2px;
+}
+.intro,
+.outro {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.outro {
+  flex-direction: column;
+}
+.flex1 {
+  padding-right: 20px;
+  /* flex: 1; */
+  font-size: 0.6em;
+  width: 300px;
+  letter-spacing: 2px;
+}
+.flex2 {
+  /* flex: 2; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 120px;
+  padding: 10px;
+  justify-content: center;
+  font-size: 0.6em;
+  letter-spacing: 2px;
+}
+.section2,
+.section3,
+.section4 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+.flex {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 20px;
+  z-index: 2;
+  line-height: 30px;
+  padding-left: 40px;
+}
+.flex:before {
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 0.8;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.flex3 {
+  flex: 1;
+  background-image: url(https://images.unsplash.com/photo-1461468611824-46457c0e11fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  background-size: cover;
+  background-position: right;
+}
+.flex3:before {
+  background: lightblue;
+}
+.flex4 {
+  flex: 2;
+  background-image: url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1844&q=80);
+  background-size: cover;
+  background-position: bottom;
+}
+.flex4:before {
+  background: rgb(162, 102, 177);
+}
+h3 {
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  width: 180px;
+}
+.flex5 {
+  flex: 3;
+  background-image: url(https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80);
+  background-size: cover;
+  background-position: right;
+}
+.flex5:before {
+  background: rgb(216, 100, 80);
+}
+.flex6 {
+  flex: 2;
+  background-image: url(https://images.unsplash.com/photo-1588167056547-c183313da47c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1431&q=80);
+  background-size: cover;
+  background-position: left;
+}
+.flex6:before {
+  background: rgb(221, 181, 94);
+}
+.flex7 {
+  flex: 2;
+  display: flex;
+  background-image: url(https://images.unsplash.com/photo-1495313196544-7d1adf4e628f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80);
+  background-size: cover;
+  background-position: right;
+}
+.flex7:before {
+  background: rgb(80, 105, 168);
+}
+.flex8 {
+  flex: 3;
+  background-image: url(https://images.unsplash.com/photo-1558185348-fe8fa4cf631f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  background-size: cover;
+  background-position: bottom;
+}
+.flex8:before {
+  background: rgb(84, 184, 151);
+}
+.lastbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 140px;
+  padding: 8px;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 0.6em;
+  letter-spacing: 2px;
+}
+footer {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  background: rgb(6, 6, 50);
+  justify-content: flex-start;
+}
+footer div {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 60px;
+  margin-top: 20px;
+  background-color: white;
+  /* margin: 10px; */
+}
+.svg {
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 320px) {
+    * {
+  width 100%;
+  }
+}
